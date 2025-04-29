@@ -1,0 +1,89 @@
+/* nav bar */
+
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: #D9D9D9;
+    padding: 1.5vh 3vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-left,.nav-center,.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left {
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
+.nav-right {
+    justify-content: flex-end;
+    gap: 2vw;
+}
+
+.nav a,
+.nav button {
+    all: unset; 
+    font-family: 'KBO Dia Gothic', sans-serif;
+    font-size: clamp(14px, 1.5vw, 22px);
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.kbo-logo {
+    height: clamp(30px, 5vh, 50px);
+    display: block;
+}
+
+body.kia-page .nav {
+    background-color: #E61A28;
+    /* #06141F */
+}
+body.samsung-page .nav {
+    background-color: #005BAC;
+    /* #FFFFFF */
+}
+body.lg-page .nav {
+    background-color: #C30452;
+    /* #000000 */
+}
+body.doosan-page .nav {
+    background-color: #13294B;
+    /* #EB1D25 */
+}
+body.kt-page .nav {
+    background-color: #231F20;
+    /* #EB1C24 */
+}
+body.ssg-page .nav {
+    background-color: #C8102E;
+    /* #FFB81C */
+}
+body.lotte-page .nav {
+    background-color: #041E42;
+    /* #D00F31 */
+}
+body.hanwha-page .nav {
+    background-color: #FA5900;
+    /* #07111F */
+}
+body.nc-page .nav {
+    background-color: #1D428A;
+    /* #AF917B */
+}
+body.kiwoom-page .nav {
+    background-color: #6E0C1F;
+    /* #B07F4A */
+}

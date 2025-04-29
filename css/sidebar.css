@@ -1,0 +1,116 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -270px; 
+    width: 250px;
+    height: 100%;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 20px;
+    transition: right 0.3s ease; 
+    z-index: 1100;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2); 
+    overflow-y: auto; 
+}
+
+.sidebar.open {
+    right: 0; 
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.team-entry {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.team-entry img {
+    width: auto;
+    height: 40px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.team-entry:hover {
+    transform: scale(1.03);
+}
+
+.kia     { background-color: #E61A28; }
+.samsung { background-color: #005BAC; }
+.lg      { background-color: #C30452; }
+.doosan  { background-color: #13294B; }
+.kt      { background-color: #231F20; }
+.ssg     { background-color: #C8102E; }
+.lotte   { background-color: #041E42; }
+.hanhwa  { background-color: #FA5900; }
+.nc      { background-color: #1D428A; }
+.kiwoom  { background-color: #6E0C1F; } 
+
+.dim-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1050; 
+}
+
+.dim-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.kia-page .sidebar {
+    background-color: #E61A28;
+}
+body.samsung-page .sidebar {
+    background-color: #005BAC;
+}
+body.lg-page .sidebar {
+    background-color: #C30452;
+}
+body.doosan-page .sidebar {
+    background-color: #13294B;
+}
+body.kt-page .sidebar {
+    background-color: #231F20;
+}
+body.ssg-page .sidebar {
+    background-color: #C8102E;
+}
+body.lotte-page .sidebar {
+    background-color: #041E42;
+}
+body.hanhwa-page .sidebar {
+    background-color: #FA5900;
+}
+body.nc-page .sidebar {
+    background-color: #1D428A;
+}
+body.kiwoom-page .sidebar {
+    background-color: #6E0C1F;
+}
