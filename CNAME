@@ -1,1 +1,4 @@
-kboteam.com
+TYPE: CNAME  
+HOST: www  
+ANSWER: park1173.github.io  
+TTL: 300
